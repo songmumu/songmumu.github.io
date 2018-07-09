@@ -1,0 +1,42 @@
+body{
+  display: flex;
+}
+.title{
+  flex-basis: 20%;
+  float: left;
+  background-color: cornflowerblue;
+}
+
+.title h1{
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+main{
+  width: 75%;
+  float: left;
+  padding: 2rem;
+}
+
+span{
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.base-info p{
+  float: left;
+  margin-right:3rem;
+}
+
+.contact-way p{
+  float: left;
+  margin-right:3rem;
+}
+
+.clearfix:after{
+  clear: both;
+  content: '';
+  display: block;
+}

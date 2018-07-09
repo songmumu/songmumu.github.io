@@ -13,6 +13,8 @@ span{
   margin-right:3rem;
 }
 
-.clearfix{
+.clearfix:after{
   clear: both;
+  content: '';
+  display: block;
 }
