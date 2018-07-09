@@ -1,0 +1,18 @@
+span{
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.base-info p{
+  float: left;
+  margin-right:3rem;
+}
+
+.contact-way p{
+  float: left;
+  margin-right:3rem;
+}
+
+.clearfix{
+  clear: both;
+}
