@@ -8,75 +8,95 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/style_2.css" />
 </head>
 <body>
-  <header class="title">
-    <h1>简历</h1>
-  </header>
-  <main>
-    <section class="base-info">
-      <aside>
-          <h2>基本信息</h2>
-      </aside>
-      <div class="clearfix">
-        <p><span>姓名</span>张三</p>
-        <p><span>性别</span>男</p>
-        <p><span>应聘职位</span>Web前端工程师</p>
+  <div class="project">
+    <header class="title">
+      <h1>简历</h1>
+      <div class="show-btn">
+        <a href="#0" id="show">点击观看作品展示</a>
       </div>
-    </section>
-    <section class="contact-way">
-      <aside>
-        <h2>联系方式</h2>
-      </aside>
-      <div class="clearfix">
-        <p><span>手机</span>18300000000</p>
-        <p><span>Email</span><a href="#">983000000@qq.com</a></p>
-        <p><span>个人主页</span><a href="#">github.com/songmumu</a></p>
+      <div class="look-me">
+        <p>点击链接查看</p>
+        <ol id="my-project">
+          <li><a href="https://songmumu.github.io/ife_9-11/index">fie_9-11</a></li>
+          <li><a href="https://songmumu.github.io/ife_12-15/index">fie_12-15</a></li>
+        </ol>
       </div>
-    </section>
-    <section>
-      <aside>
-        <h2>能力描述</h2>
-      </aside>
-      <div>
+    </header>
+    <main>
+      <section class="base-info">
+        <aside>
+            <h2>基本信息</h2>
+        </aside>
         <div class="clearfix">
-          <p><span>技术能力</span></p>
-          <p>熟练掌握HTML、CSS、JavaScript</p>
-        </div>    
-        <div class="clearfix">
-          <p><span>综合能力</span></p>
-          <p>良好的沟通、主动积极、努力勤奋</p>
+          <p><span>姓名</span>张三</p>
+          <p><span>性别</span>男</p>
+          <p><span>应聘职位</span>Web前端工程师</p>
         </div>
-      </div>
-    </section>
-    <section>
-      <aside>
-        <h2>教育经历</h2>
-      </aside>
-      <div>
+      </section>
+      <section class="contact-way">
+        <aside>
+          <h2>联系方式</h2>
+        </aside>
         <div class="clearfix">
-          <p><span>本科</span></p>
-          <p>百度前端技术学院小薇学院</p>
-        </div>    
-        <div class="clearfix">
-          <p><span>研究生</span></p>
-          <p>百度前端技术学院大斌学院</p>
+          <p><span>手机</span>18300000000</p>
+          <p><span>Email</span><a href="#1">983000000@qq.com</a></p>
+          <p><span>个人主页</span><a href="#2">github.com/songmumu</a></p>
         </div>
-      </div>
-    </section>
-    <section>
-      <aside>
-        <h2>项目经历</h2>
-      </aside>
-      <div>
-        <div class="clearfix">
-          <p><span>小度小度</span></p>
-          <p>作为前端工程师的角色参与了ABC组件的开发</p>
-        </div>    
-        <div class="clearfix">
-          <p><span>SAN Doc</span></p>
-          <p>作为文档工程师参与了SAN Doc编写</p>
+      </section>
+      <section>
+        <aside>
+          <h2>能力描述</h2>
+        </aside>
+        <div>
+          <div class="clearfix">
+            <p><span>技术能力</span></p>
+            <p>熟练掌握HTML、CSS、JavaScript</p>
+          </div>    
+          <div class="clearfix">
+            <p><span>综合能力</span></p>
+            <p>良好的沟通、主动积极、努力勤奋</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+      <section>
+        <aside>
+          <h2>教育经历</h2>
+        </aside>
+        <div>
+          <div class="clearfix">
+            <p><span>本科</span></p>
+            <p>百度前端技术学院小薇学院</p>
+          </div>    
+          <div class="clearfix">
+            <p><span>研究生</span></p>
+            <p>百度前端技术学院大斌学院</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <aside>
+          <h2>项目经历</h2>
+        </aside>
+        <div>
+          <div class="clearfix">
+            <p><span>小度小度</span></p>
+            <p>作为前端工程师的角色参与了ABC组件的开发</p>
+          </div>    
+          <div class="clearfix">
+            <p><span>SAN Doc</span></p>
+            <p>作为文档工程师参与了SAN Doc编写</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    let lookMe = document.getElementsByClassName('look-me')[0];
+    let showBtn = document.getElementsByClassName('show-btn')[0];
+    showBtn.addEventListener('click', function(event) {
+      event.stopPropagation;
+      lookMe.style.height = 100 + 'px';
+    })
+  </script>
 </body>
 </html>
