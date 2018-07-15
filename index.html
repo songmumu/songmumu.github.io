@@ -91,12 +91,34 @@
     </main>
   </div>
   <script>
-    let lookMe = document.getElementsByClassName('look-me')[0];
-    let showBtn = document.getElementsByClassName('show-btn')[0];
-    showBtn.addEventListener('click', function(event) {
-      event.stopPropagation;
-      lookMe.style.height = 100 + 'px';
-    })
+    window.onload = function() {
+      // 作品展示动画
+      let lookMe = document.getElementsByClassName('look-me')[0];
+      let showBtn = document.getElementsByClassName('show-btn')[0];
+      showBtn.addEventListener('click', function(event) {
+        event.stopPropagation;
+        lookMe.style.height = 100 + 'px';
+      })
+      //say-Hello
+      function sayHi() {
+        let time = new Date();
+        let hour = time.getHours();
+        let message = '很高兴你能来看我的简历！谢谢';
+        if (5 < hour && hour < 11) {
+          message = '早上好啊，' + message;
+        } else if (11 <=hour && hour < 14) {
+          message = '中午好啊，' + message;
+        } else if (14 <= hour && hour < 19) {
+          message = '下午好啊，' + message;
+        } else if (19 <= hour && hour < 24) {
+          message = '晚上好啊，' + message;
+        } else {
+          message = '能告诉我现在是几点了吗？，真的';
+        }
+        alert(message);
+      }
+      sayHi();
+    }
   </script>
 </body>
 </html>
